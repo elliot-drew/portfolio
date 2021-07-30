@@ -1,7 +1,7 @@
 .portfolio-header {
   position: relative;
   background-image: url(images/prot3.jpg);
-  
+  background-position: 50% 0%;
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -161,7 +161,7 @@ footer {
 .elliot-title {
   font-size: 3rem;
   padding-left:10px;
-  
+  text-shadow: 0 0 5px rgb(117, 117, 117);
 }
 
 .is-compact .elliot-title {
