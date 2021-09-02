@@ -1,7 +1,7 @@
 .card  {
   align-self: stretch  !important;
   display: inline-table;
-
+  border-radius: 1.5%;
 }
 
 .section-header {
