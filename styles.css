@@ -1,227 +1,34 @@
-.portfolio-header {
-  position: relative;
-  background-image: url(images/prot3.jpg);
-  background-position: 50% 0%;
+.card  {
+  align-self: stretch  !important;
+  display: inline-table;
+
 }
 
-.portfolio-header .mdl-layout__header-row {
-  padding: 5px;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.section-header {
+  justify-content: center;
 }
 
-.mdl-layout__title {
-  font-size: 14px;
-  text-align: center;
-  font-weight: 300;
+body {
+  background: rgb(69,76,87);
+background: -moz-linear-gradient(top,  rgba(69,76,87,1) 1%, rgba(9,10,8,1) 140%, rgba(9,10,8,1) 140%);
+background: -webkit-linear-gradient(top,  rgba(69,76,87,1) 1%,rgba(9,10,8,1) 140%,rgba(9,10,8,1) 140%);
+background: linear-gradient(to bottom,  rgba(69,76,87,1) 1%,rgba(9,10,8,1) 140%,rgba(9,10,8,1) 140%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454c57', endColorstr='#090a08',GradientType=0 );
+
 }
 
-.is-compact .mdl-layout__title span {
-  display: none;
+.center {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.portfolio-logo-row {
-  min-height: 200px;
+.profilepic {
+  border-radius: 10%;
+  object-fit: cover;
 }
 
-.is-compact .portfolio-logo-row {
-  min-height: auto;
-}
-
-.portfolio-logo {
-  background: url(images/me.jpg) 50% no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 150px;
-  margin: auto auto 10px;
-  border-radius:50%;
-  box-shadow:5px 5px 5px gray;
-  
-}
-
-.is-compact .portfolio-logo {
-  height: 50px;
-  width: 50px;
-  margin-top: 7px;
-}
-
-.portfolio-navigation-row {
-  background-color: rgb(228, 228, 228);
-  text-transform: uppercase;
-  height: 45px;
-  
-}
-
-.portfolio-navigation-row  .mdl-navigation {
-  text-align: center;
-  max-width: 700px;
-  width: 100%;
-}
-
-.portfolio-navigation-row .mdl-navigation__link {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  line-height: 42px;
-}
-
-.portfolio-header .mdl-layout__drawer-button {
-    background-color: rgba(197, 197, 197, 0.44);
-}
-
-.portfolio-navigation-row .is-active {
-  position: relative;
-  font-weight: bold;
-}
-
-.portfolio-navigation-row .is-active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255,64,129);
-  left: 15%;
-}
-
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-
-.elliot-content {
-  width:95%;
-  margin:auto;
-}
-.portfolio-max-width {
-  max-width: 700px;
-  margin: auto;
-  
-}
-
-.portfolio-copy {
-  max-width: 700px;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.no-left-padding{
-  padding-left: 0;
-}
-
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-
-.padding-top {
-  padding: 10px 0 0;
-}
-
-.portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
-}
-
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.portfolio-contact .mdl-textfield {
-  width: 100%;
-}
-
-.portfolio-contact form {
-  max-width: 550px;
-  margin: auto;
-}
-
-footer {
-  background-image: url(images/footer-background.png);
-  background-size: cover;
-  
-}
-
-
-.elliot-subheading {
-  font-size: 2rem;
-  
-  width:100%;
-  padding:10px 0px 10px 0px;
-  margin-top:60px;
-}
-
-.elliot-title {
-  font-size: 3rem;
-  padding-left:10px;
-  text-shadow: 0 0 5px rgb(117, 117, 117);
-}
-
-.is-compact .elliot-title {
-  font-size: 1.5rem;
-  padding-left:10px;
-  
-}
-
-.main-carousel {
-  width:100%;
-  margin-bottom: 100px;
-}
-
-.carousel-cell {
-  width:100%;
-  /* min-height:250px; */
-}
-
-.mdl-cell {
-  width: calc(100% - 16px) !important;
-}
-
-.mdl-layout__header{
-  background-color: white;
-}
-
-.elliot-card-sub-text{
-  font-size: 0.8rem;
-  
-}
-
-.elliot-smaller {
-  font-size: 1.2rem;
-  font-style: italic;
-}
-
-.flickity-prev-next-button.next{
-  right:-15px;
-}
-.flickity-prev-next-button.previous{
-  left:-15px;
-}
-
-
-img.article-image{
-  width: 70%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mdl-card__media {
-  background-color:rgba(197, 197, 197, 0.0);
-  background-image:
-  linear-gradient(black, black),
-  url(images/protorange.png);
-  background-blend-mode: saturation;
+.skills {
+  align-content: baseline;
 }

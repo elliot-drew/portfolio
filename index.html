@@ -1,295 +1,328 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A portfolio template that uses Material Design Lite.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Elliot Drew</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="Elliot Drew's Portfolio">
+  <meta name="author" content="Elliot Drew">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta property="og:title" content="Elliot Drew's Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="Elliot Drew's Portfolio">
 
-    <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="mini-dark.css">
+  
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
-                
-                <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
-                </span>
-                <span class="mdl-layout__title elliot-title">Elliot Drew</span>
-            </div>
-            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link  is-active" href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
 
-                </nav>
-            </div>
-        </header>
-        <div class="mdl-layout__drawer  mdl-layout--small-screen-only">
-            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-            </nav>
-        </div>
-        <main class="mdl-layout__content">
-            
-            <div class="portfolio-max-width">
-                <div class="elliot-content">
-                <div class="elliot-subheading">Hi!</div>
-                <h6>
-                    I'm Elliot Drew, a postdoctoral researcher at Queen Mary, University of London. I do bioinformatics research - developing new tools and algorithms for
-                    the analysis of biological data - and
-                    work on personal projects in my spare time.
-                </h6>
-                <h6>
-                    Below you can see a few of my personal projects, some of the projects/papers I have produced during my PostDoc at QMUL. Code for personal projects can 
-                    be found at my <a href="https://github.com/elliot-drew">github</a> profile.
-                </h6>
-                <h6>
-                    If you want to contact me, here is my <a href="https://www.linkedin.com/in/elliot-drew-bio">LinkedIn</a>.
-                </h6>
-                <div class="elliot-subheading">Personal projects</div>
-                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">
-                        
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/wikiplinker.png" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">WikiPlinker</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    This stupidly named JavaScript library makes it easy to connect any element on a webpage
-                                    to pages in Wikipedia, using simple to use and understand custom data- attributes. 
-                                    Currently this can be done by explicitly
-                                    defining the title of the page or by searching for a term and returning the top hits, which are
-                                    displayed as a toggleable tooltip on the web page.
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://elliot-drew.github.io/wikiplinker/">See Examples and Documentation</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">
-                        
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/mutationstation_website.jpg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">Mutation Station</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    Many computational mutagenesis tools allow batch submission of mutations.
-                                    Only problem is it can be a nightmare to produce the list of mutations in the required format without some basic scripting skills.
-                                    This tool takes the pain out of this situation by generating mutation inputs for a number of popular services and tools, from either
-                                    a protein sequence or a PDB file. All Javascript/HTML/CSS - all client side.
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://elliot-drew.github.io/mutation-station/">Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">    
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/protviewer_website.jpg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">ProtViewer</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <b>Warning: very much a work in progress!</b><br><br>
-                                    This tool allows one to examine various functional/sequence annotations from UniProt in a structural context including mutations, active sites and more.
-                                    The annotations are then displayed on the structure, and the interactions
-                                    and neighbourhoods of interesting residues/sites can be visualised interactively.
-                                    The <a href="https://github.com/nglviewer/ngl">NGL viewer</a> library is used for visualisation of 
-                                    protein structure. Pure Javascript/HTML/CSS - all runs client side. There are a number of bugs/issues but they are being
-                                    actively worked on when I have the time.
-                            
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://elliot-drew.github.io/protviewer/">Visit site</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="elliot-subheading">PostDoc @ QMUL</div>
-                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">
-                        
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/covid_paper.jpg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text elliot-smaller">Paper</h2>
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">Identification of a druggable binding pocket in the spike protein reveals a key site for existing drugs potentially capable of combating Covid-19 infectivity</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span class="elliot-card-sub-text">Elliot D. Drew & Robert W. Janes,BMC Molecular and Cell Biology volume 21, Article number: 49 (2020)</span>
-                                    <br><br>
-                                    <!-- This study highlights possible drugs already in use as pharmaceuticals that may act as agents to interfere with the movements of the domains within this protein essential for the infectivity processes and hence might slow, or even halt, the infection of host cells by this new coronavirus. As these are existing pharmaceuticals already approved for use in humans, this knowledge could accelerate their roll-out, through repurposing, for affected individuals and help guide the efforts of other researchers in finding effective treatments for the disease. -->
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://link.springer.com/article/10.1186/s12860-020-00294-x">Read Article</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">    
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/PDBMD2CDabs.png" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text elliot-smaller">Paper</h2>
-                                </div>
-                                
-                                <div class="mdl-card__title">
-                                    
-                                    <h2 class="mdl-card__title-text">PDBMD2CD: providing predicted protein circular dichroism spectra from multiple molecular dynamics-generated protein structures</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span class="elliot-card-sub-text">
-                                        Elliot D. Drew & Robert W. Janes, Nucleic Acids Research, Volume 48, Issue W1, (2020)</span>
-                                    <br><br>
-                                    <!-- PDBMD2CD is a new web server capable of predicting circular dichroism (CD) spectra for multiple protein structures derived from molecular dynamics (MD) simulations, enabling predictions from thousands of protein atomic coordinate files (e.g. MD trajectories) and generating spectra for each of these structures provided by the user.  The website utilizes a much faster (minimum ∼1000×) and more accurate approach for calculating CD spectra than its predecessor, PDB2CD. As well as improving on the speed and accuracy of current methods, new analysis tools are provided to cluster predictions or compare them against experimental CD spectra.  -->
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://academic.oup.com/nar/article/48/W1/W17/5826170">Read article</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">
-                        
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/pdbmd2cd_website.jpg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text elliot-smaller">Website</h2>
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">PDBMD2CD</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <!-- <a href="https://pdbmd2cd.cryst.bbk.ac.uk">PDBMD2CD</a> allows for the prediction of circular dichroism spectra from the atomic coordinates of proteins. The algorithm is significantly faster and more accurate than the previous iteration (PDB2CD), allowing for batch submission of structures. A number of analysis tools are provided, including spectra clustering and ensemble generation through fitting to experimental spectra if provided. -->
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://pdbmd2cd.cryst.bbk.ac.uk">Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">    
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/2struccomp_paper.jpeg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text elliot-smaller">Paper</h2>
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">2StrucCompare: a webserver for visualizing small but noteworthy differences between protein tertiary structures through interrogation of the secondary structure content</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <span class="elliot-card-sub-text">
-                                        Elliot D. Drew & Robert W. Janes, Nucleic Acids Research, Volume 47, Issue W1, (2019)</span>
-                                    <br><br>
-                                    <!-- StrucCompare is a webserver whose primary aim is to visualize subtle but functionally important differences between two related protein structures, either of the same protein or related homologues, with similar or functionally different tertiary structures. At the heart of the package is identifying and visualizing differences between conformations at the secondary structure and at the residue level, such as contact differences or side chain conformational differences found between two protein chains. 2StrucCompare captures both the large and more subtle differences found between structures, enabling visualization of these differences that could be key to an understanding of a proteins’ function. -->
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://academic.oup.com/nar/article/47/W1/W477/5494782">Read article</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="mdl-grid">
-                        
-                        
-                            <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-                                <div class="mdl-card__media">
-                                    <img class="article-image" src=" images/2struccomp_website.jpg" border="0" alt="">
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text elliot-smaller">Website</h2>
-                                </div>
-                                <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">2struccompare</h2>
-                                </div>
-                                <div class="mdl-card__supporting-text">
-                                    <!-- <a href="https://2struccompare.cryst.bbk.ac.uk">2struccompare</a> is a user friendly tool for the comparison of protein structures. Differences in secondary structure, contacts made, backbone position and sidechain orientation can be analysed using a highly visual and dynamic interface, to develop and investigate interesting biological questions. -->
-                                </div>
-                                <div class="mdl-card__actions mdl-card--border">
-                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://2struccompare.cryst.bbk.ac.uk">Visit Site</a>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                
-                </div>
-                </div>
-            </div>
-            
-        </main>
+  <header class="sticky">
+    <div class="col-sm col-lg-10 col-lg-offset-1">
+      <a href="#top" role="button">Me</a>
+      <a href="#skills" role="button">Skills</a>
+      <a href="#projects" role="button">Proj</a>
+      <a href="#pubs" role="button">Pubs</a>
+      <a href="https://github.com/elliot-drew" role="button" target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/elliot-drew-bio/" role="button" target="_blank">LinkedIn</a>
     </div>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-</body>
+  </header>
+  <br />
+  <div class="container">
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <h1 id="top">About me</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-3 col-lg-offset-1 row section-header">
+        <img class="profilepic" src="images/me.jpg">
+      </div>
+      <div class="col-sm-12 col-lg-7  row section-header">
+        
+        <p>
+          I'm <b>Elliot Drew</b>, a postdoctoral researcher at Queen Mary, University of London. I do bioinformatics research - developing new tools and algorithms for
+          the analysis of biological data - and
+          work on personal projects in my spare time.
+        </p>
+        <p>
+            I got my undergrad degree in Biochemistry from University of Bristol, an MSc in Bioinformatics and Theoretical 
+            Systems Biology from Imperial College London, and finally my PhD in Structural Biology from Birkbeck College, 
+            University of London.
+        </p>
+        <p>
+            I've been a postdoctoral researcher at Queen Mary University, University of London since 2017. I develop and maintain a number
+            of websites and tools that serve the structural biology community, with a particular focus on Circular Dichroism
+            Spectroscopy. Occasionally I will detach myself from my computer and go into a wet-lab to collect data.
+        </p>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <h2 id="skills" >Skills</h2>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-1 row section-header"></div>
+      <div class="col-sm-12 col-lg row section-header skills">
+        <h4>Programming/Web</h4>
+        <ul>
+          <li>
+              <p>
+              Python
+              </p>
+          </li>
+          <li>
+            <p>
+              NumPy/SciPy/Pandas, Tensorflow, scikit-learn
+            </p>
+          </li>
+          <li>
+            <p>
+              Tensorflow, Keras, scikit-learn
+            </p>
+          </li>
+          <li>
+            <p>
+              Flask, SQLAlchemy
+            </p>
+          </li>
+          <li>
+              <p>
+              Javascript
+              </p>
+          </li>
+          <li>
+              <p>
+              React
+              </p>
+          </li>
+          <li>
+              <p>
+              PHP
+              </p>
+          </li>
+          <li>
+              <p>
+              R and Matlab
+              </p>
+          </li>
+          <li>
+              <p>
+              HTML/CSS
+              </p>
+          </li>
+          <li>
+              <p>
+              Docker
+              </p>
+          </li>
+      </ul>
+      </div>
+      <div class="col-sm-12 col-lg  row section-header skills">
+        <h4>Data analysis</h4>
+        <ul>
+            <li>
+                <p>
+                Data cleaning/feature selection
+                </p>
+            </li>
+            <li>
+                <p>
+                Inferential statistical analysis
+                </p>
+            </li>
+            <li>
+                <p>
+                ML - Random Forest, XGBoost, SVM, clustering
+                </p>
+            </li>
+            <li>
+                <p>
+                Deep neural networks, reinforcement learning
+                </p>
+            </li>
+            <li>
+                <p>
+                Experimental design/hypothesis testing
+                </p>
+            </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-lg row section-header skills">
+        <h4>Bioinformatics/Biology</h4>
+        <ul>
+            <li>
+                <p>
+                Molecular Dynamics
+                </p>
+            </li>
+            <li>
+                <p>
+                Protein Modelling
+                </p>
+            </li>
+            <li>
+                <p>
+                Protein-Protein docking
+                </p>
+            </li>
+            <li>
+                <p>
+                Virtual Drug screening
+                </p>
+            </li>
+            <li>
+                <p>
+                Protein Purification and expression
+                </p>
+            </li>
+        </ul>
+      </div>
+      <div class="col-sm-12 col-lg-1 row section-header"></div>  
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <h2 id="projects" >Personal and work projects</h2>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <p>
+          Below you can see a few of my personal projects, and some that I have produced during my PostDoc at QMUL. Code for personal projects can 
+          be found at my <a href="https://github.com/elliot-drew">github</a> profile.
+        </p>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <!-- Add the extra style to make card spacing look better -->
+      <div class="col-lg-offset-1 row" style="-webkit-justify-content: space-around; justify-content: space-around;">
+        <div class="card">          
+            <img class="section media" src="images/protviewer_website.jpg" border="0" alt="">
+          <a href="https://elliot-drew.github.io/protviewer/" target="_blank">
+          <h3 class="section double-padded">ProtViewer</h3>
+          </a>
+          <p class="section double-padded">
+          <b>Warning: very much a work in progress!</b><br><br>
+          This tool allows one to examine various functional/sequence annotations from UniProt in a structural context including mutations, active sites and more.
+          The annotations are then displayed on the structure, and the interactions
+          and neighbourhoods of interesting residues/sites can be visualised interactively.
+          
+          </p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/af-disorder-pred.png" border="0" alt="">
+          <a href="https://github.com/elliot-drew/alphafold-disorder-prediction" target="_blank">
+          <h3 class="section double-padded">alphafold-disorder-predictor</h3>
+          </a>
+          <p class="section double-padded">
+          Command line Python implementation of the disorder prediction approach outlined by <a href="https://github.com/normandavey/">Norman Davey</a> 
+          and <a href="https://github.com/BalintMeszaros">Balint Meszaros</a> in <a href="https://github.com/normandavey/ProcessedAlphafold">this</a> github repo.
+          Both approaches (pLDDT and RSA based) are implemented. You just need an Alphafold PDB model file and/or a DSSP file derived from said model. 
+          </p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/wikiplinker.png" border="0" alt="">
+          <a href="https://elliot-drew.github.io/wikiplinker/" target="_blank">
+          <h3 class="section double-padded">WikiPlinker</h3>
+          </a>
+          <p class="section double-padded">
+            This stupidly named JavaScript library makes it easy to connect any element on a webpage
+            to pages in Wikipedia, using simple to use and understand custom <code>data-</code> attributes. 
+            Currently this can be done by explicitly
+            defining the title of the page or by searching for a term and returning the top hits, which are
+            displayed as a toggleable tooltip on the web page.
+          </p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/mutationstation_website.jpg" border="0" alt="">
+          <a href="https://elliot-drew.github.io/mutation-station/" target="_blank">
+          <h3 class="section double-padded">Mutation Station</h3>
+          </a>
+          <p class="section double-padded">
+            Many computational mutagenesis tools allow batch submission of mutations.
+            Only problem is it can be a nightmare to produce the list of mutations in the required format without some scripting skills.
+            This tool takes the pain out of this situation by generating mutation inputs for a number of popular services and tools, from either
+            a protein sequence or a PDB file. All Javascript/HTML/CSS - all client side.
+          </p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/pdbmd2cd_website.jpg" border="0" alt="">
+          <a href="https://pdbmd2cd.cryst.bbk.ac.uk" target="_blank">
+          <h3 class="section double-padded">PDBMD2CD (Postdoc)</h3>
+          </a>
+          <p class="section double-padded">
+            <a href="https://pdbmd2cd.cryst.bbk.ac.uk">PDBMD2CD</a> allows for the prediction of circular dichroism spectra from the atomic coordinates of proteins. The algorithm is significantly faster and more accurate than the previous iteration (PDB2CD), allowing for batch submission of structures. A number of analysis tools are provided, including spectra clustering and ensemble generation through fitting to experimental spectra if provided.
+          </p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/2struccomp_website.jpg" border="0" alt="">
+          <a href="https://2struccompare.cryst.bbk.ac.uk" target="_blank">
+          <h3 class="section double-padded">2StrucCompare (Postdoc)</h3>
+          </a>
+          <p class="section double-padded">
+            <a href="https://2struccompare.cryst.bbk.ac.uk">2StrucCompare</a> is a webserver whose primary aim is to visualize subtle but functionally important differences between two related protein structures, either of the same protein or related homologues, with similar or functionally different tertiary structures.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <h2 id="pubs">Recent Publications</h2>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <div class="col-lg-offset-1 row section-header">
+        <p>
+          Below is some of the research I have published in my Postdoc.
+        </p>
+      </div>
+    </div>
+    <div class="row cols-sm-12 cols-lg-10">
+      <!-- Add the extra style to make card spacing look better -->
+      <div class="col-lg-offset-1 row" style="-webkit-justify-content: space-around; justify-content: space-around;">
+        <div class="card">          
+            <img class="section media" src="images/covid_paper.jpg" border="0" alt="">
+          <a href="https://link.springer.com/article/10.1186/s12860-020-00294-x" target="_blank">
+          <h4 class="section double-padded">Identification of a druggable binding pocket in the spike protein reveals a key site for existing drugs potentially capable of combating Covid-19 infectivity</h4>
+          </a>
+          <p class="section double-padded">Elliot D. Drew & Robert W. Janes,BMC Molecular and Cell Biology volume 21, Article number: 49 (2020)</p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/PDBMD2CDabs.png" border="0" alt="">
+          <a href="https://academic.oup.com/nar/article/48/W1/W17/5826170" target="_blank">
+          <h4 class="section double-padded">PDBMD2CD: providing predicted protein circular dichroism spectra from multiple molecular dynamics-generated protein structures</h4>
+          </a>
+          <p class="section double-padded">Elliot D. Drew & Robert W. Janes, Nucleic Acids Research, Volume 48, Issue W1, (2020)</p>
+        </div>
+        <div class="card">          
+            <img class="section media" src="images/2struccomp_paper.jpeg" border="0" alt="">
+          <a href="https://academic.oup.com/nar/article/47/W1/W477/5494782" target="_blank">
+          <h4 class="section double-padded">2StrucCompare: a webserver for visualizing small but noteworthy differences between protein tertiary structures through interrogation of the secondary structure content</h4>
+          </a>
+          <p class="section double-padded">
+            Elliot D. Drew & Robert W. Janes, Nucleic Acids Research, Volume 47, Issue W1, (2019)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="col-sm col-lg-10 col-lg-offset-1">
+      <p>Copyright &copy; Elliot Drew 2021 | Built using <a href="https://chalarangelo.github.io/mini.css/">mini.css</a>
+      </p>
+    </div>
+  </footer>
 
+</body>
 </html>
